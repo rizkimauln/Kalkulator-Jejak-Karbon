@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator - Carbon Footprint Calculator</title>
+    <script
+      src="https://kit.fontawesome.com/1165876da6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/kalkulator.css" />
+    <script defer src="scripts/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Carbon Footprint.</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="kalkulator.html">Kalkulator</a>
+        <a href="penanggulangan.html">Cara Penanggulangan</a>
+        <a href="tentangkami.html">Tentang Kami</a>
+      </nav>
+    </header>
+    <main>
+      <center><h2>Kalkulator Jejak Karbon</h2></center>
+      <form id="calculator-form">
+        <fieldset>
+          <legend>AC</legend>
+          <label for="ac_hours">Jam penggunaan AC per hari:</label>
+          <input type="number" id="ac_hours" name="ac_hours" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Kendaraan</legend>
+          <label for="vehicle_km"
+            >Jarak tempuh kendaraan per minggu (km):</label
+          >
+          <input type="number" id="vehicle_km" name="vehicle_km" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Peralatan Listrik</legend>
+          <label for="electricity">Penggunaan Listrik per bulan (kWh):</label>
+          <input type="number" id="electricity" name="electricity" required />
+        </fieldset>
+        <button type="submit">Hitung Jejak Karbon</button>
+      </form>
+      <center><div id="result"></div></center>
+    </main>
+    
+    <footer>
+      <div class="container6">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>Email : info@uinsgd.ac.id</p>
+          <p>Phone : (022)7800525</p>
+          <p>Address: Kota Bandung</p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kalkulator.html">Kalkulator</a></li>
+            <li><a href="penanggulangan.html">Penanggulangan</a></li>
+            <li><a href="tentangkami.html">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2024 Carbon Footprint. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
